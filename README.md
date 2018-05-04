@@ -224,3 +224,8 @@ npm run build:vendors
 ```
 http://localhost:8009/static/[name]
 ```
+
+*多页面访问地址*
+```
+http://localhost:8009/pages/page2/index.html
+```
