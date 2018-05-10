@@ -13,8 +13,8 @@
 
 <template>
     <div class="home-index">
-        <h1 class="index__title">首页 index</h1>
-        <p class="index__desc">this is index</p>
+        <h1 class="index__title">首页 detail</h1>
+        <p class="index__desc">this is detail</p>
     </div>
 </template>
 

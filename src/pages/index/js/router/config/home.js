@@ -13,6 +13,29 @@ export default {
     component: Home.Layout,
     children: [
         {
+            path: '/home/index',
+            name: 'home/index',
+            meta: {
+                title: 'homeindex'
+            },
+            component: () => import(
+                'Spa@comp/pages/home/index.vue'
+            )
+        },
+
+        {
+            path: '/home/detail',
+            name: 'home/detail',
+            meta: {
+                title: 'spa单页首页'
+            },
+            component: () => import(
+                /* webpackChunkName: "home-index-component" */
+                'Spa@comp/pages/home/detail.vue'
+            )
+        },
+
+        {
             path: '',
             name: 'home',
             meta: {
@@ -22,6 +45,7 @@ export default {
                 /* webpackChunkName: "home-index-component" */
                 'Spa@comp/pages/home/index.vue'
             )
-        }
+        },
+
     ]
 }
