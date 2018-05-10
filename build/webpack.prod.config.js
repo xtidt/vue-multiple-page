@@ -6,7 +6,7 @@
  * @lastDate 2017-07-17, 14:17:52 GMTCST
  */
 
-const 
+const
 	path = require('path'),
 	webpack = require('webpack'),
 	webpackMerge = require('webpack-merge');
@@ -19,7 +19,7 @@ const
 	BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin,
 	UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
-const 
+const
 	baseWebpackConfig = require('./webpack.base.config'),
 	{ nowConfig, commonsChunkName } = require('./util');
 
@@ -37,7 +37,7 @@ module.exports = webpackMerge(baseWebpackConfig, {
 		}),
 
 		// banner条
-		new webpack.BannerPlugin('版权归友友传媒所有'),
+		new webpack.BannerPlugin('版权所有'),
 
 		// 压缩css
 		new OptimizeCSSPlugin(),
@@ -91,7 +91,7 @@ module.exports = webpackMerge(baseWebpackConfig, {
 					entrys = Object.keys(config.entry),
 					vendors = commonsChunk;
 
-				let 
+				let
 					orders = ['manifest'].concat(vendors, entrys),
 					order1 = orders.indexOf(chunk1.names[0]),
 					order2 = orders.indexOf(chunk2.names[0]);

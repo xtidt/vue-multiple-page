@@ -12,10 +12,19 @@ const ErrorComp = () => import(
     'Spa@comp/pages/error'
 );
 
+const TestComp = () => import(
+    'Spa@comp/pages/news'
+);
+
 export default [
     {
         path: '/',
         redirect: '/home'
+    },
+    {
+        path: '/news',
+        name: 'news',
+        component: TestComp
     },
     {
         path: '/error',

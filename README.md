@@ -46,7 +46,7 @@ npm run build:d
 
 ### dll(打包外部资源库)
 
-```  
+```
 npm run build:vendors
 ```
 
@@ -219,3 +219,8 @@ npm run build:vendors
 ## 备注
 
 *如果遇到脚本语法兼容问题，请升级 `node` 版本。其它问题请[提交问题(issue)](https://github.com/Mrminfive/vue-multiple-page/issues/new)*
+
+*静态文件地址*
+```
+http://localhost:8009/static/[name]
+```
